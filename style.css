@@ -1,0 +1,766 @@
+html,
+body {
+    background-color: #0b0b0b !important;
+    color: white !important;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+}
+
+.left,
+.right {
+    height: 91.5vh;
+    width: 100%;
+}
+
+.right {
+    background-image: url("images/img1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.navbar {
+    height: 8.5vh;
+    background-color: #0b0b0b !important;
+    border-bottom: 1px white solid !important;
+}
+
+a.navbar-brand {
+    font-family: Libre Baskerville;
+    font-weight: 700;
+    margin-right: 40px;
+    margin-top: 1.2px;
+    font-size: 1.3em;
+    -moz-transition: color .4s ease-in;
+    -o-transition: color .4s ease-in;
+    -webkit-transition: color .4s ease-in;
+}
+
+a.navbar-brand:hover {
+    color: #e8c593;
+}
+
+a.nav-item.nav-link {
+    color: white !important;
+    padding-top: 10px;
+    font-family: Montserrat;
+    font-weight: 400;
+    font-size: .85em;
+    margin: 0 10px;
+    -moz-transition: color .4s ease-in;
+    -o-transition: color .4s ease-in;
+    -webkit-transition: color .4s ease-in;
+    cursor: pointer;
+}
+
+a.nav-item.nav-link:hover {
+    color: #e8c593 !important;
+}
+
+.rectangle {
+    overflow: hidden;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.rectangle img {
+    width: 32%;
+    margin-top: 7.5em;
+}
+
+.title {
+    position: absolute;
+    top: 4.1em;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    display: inline-block;
+    width: 50%;
+    color: #e8c593;
+    font-family: Libre Baskerville;
+    font-size: 1.9em;
+}
+
+.description {
+    color: white;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2em;
+    font-family: Montserrat;
+    font-size: .85em;
+    text-align: center;
+}
+
+.section2 {
+    padding-top: 12%;
+    padding-bottom: 6%;
+}
+
+.brief {
+    font-family: Playfair Display;
+    width: 50.5%;
+    color: #f7e8d3;
+    font-size: 1.7em;
+    margin-left: 40%;
+    z-index: 2;
+    position: relative;
+}
+
+.brief-img {
+    width: 32%;
+    margin-top: -21.5%;
+    margin-left: 13%;
+    z-index: 1;
+    position: relative;
+}
+
+.learn-more {
+    margin-left: 26.5%;
+    background-color: #0b0b0b;
+    color: white;
+    margin-top: 1.8%;
+    border: .5px solid white;
+    padding: 5px 20px 6px 20px;
+    font-family: Montserrat;
+    font-size: .9em;
+    -moz-transition: background-color .4s ease-in, color .4s ease-in;
+    -o-transition: background-color .4s ease-in, color .4s ease-in;
+    -webkit-transition: background-color .4s ease-in, color .4s ease-in;
+}
+
+.learn-more:hover {
+    color: #ebd2b0;
+    background-color: black;
+}
+
+i.fa-solid.fa-arrow-right {
+    margin-left: 4px;
+}
+
+.section3 {
+    margin: auto;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    margin-top: 5%;
+    padding-bottom: 7.5%;
+}
+
+.selection {
+    cursor: pointer;
+    text-align: center;
+    color: transparent;
+    position: relative;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: white;
+    font-size: 4.5em;
+    font-family: Roboto;
+    font-weight: 900;
+    letter-spacing: .3em;
+    z-index: 2;
+    text-transform: uppercase;
+}
+
+.selection:hover {
+    color: #e8c593;
+    -webkit-text-stroke-color: #e8c593;
+}
+
+.popup {
+    height: 24em;
+    width: 24em;
+    text-align: center;
+    margin: auto;
+    opacity: 0;
+    background-color: transparent;
+    position: relative;
+    margin-top: -31.5%;
+    z-index: 1;
+    transition: opacity .8s ease;
+}
+
+.appear1 {
+    background-image: url("images/anniversary.jpg");
+    opacity: 1 !important;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    filter: brightness(40%)
+}
+
+.appear2 {
+    background-image: url("images/graduation.jpg");
+    opacity: 1 !important;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    filter: brightness(40%)
+}
+
+.appear3 {
+    background-image: url("images/condolences.jpg");
+    opacity: 1 !important;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    filter: brightness(40%)
+}
+
+.marquee {
+    white-space: nowrap;
+    padding-top: 2.75vh;
+    cursor: default;
+    height: 37vh;
+    overflow: hidden;
+}
+
+.marquee-text {
+    font-family: Playfair Display;
+    font-weight: 500;
+    font-size: 10vw;
+    position: relative;
+    color: #524940;
+    display: inline-block;
+    margin-left: 0 15%;
+    will-change: transform;
+    letter-spacing: .05em;
+}
+
+.footer-basic {
+    padding-top: 1.8em;
+    padding-bottom: 2em;
+    background-color: #0b0b0b;
+    color: white;
+    border-top: 1px solid white;
+    font-family: Montserrat;
+}
+
+.footer-basic ul {
+    padding: 0;
+    list-style: none;
+    text-align: center;
+    font-size: .85em;
+    line-height: 1.6;
+    margin-bottom: 0;
+}
+
+.footer-basic li {
+    padding: 0 10px;
+}
+
+.footer-basic ul a {
+    color: white;
+    -moz-transition: color .4s ease-in;
+    -o-transition: color .4s ease-in;
+    -webkit-transition: color .4s ease-in;
+    text-decoration: none;
+}
+
+.footer-basic ul a:hover {
+    color: #e8c593;
+}
+
+.footer-basic ul a:hover {
+    opacity: 1;
+}
+
+.footer-basic .social {
+    text-align: center;
+    padding-bottom: 1em;
+}
+
+.footer-basic .social>a {
+    font-size: 1.2em;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    display: inline-block;
+    text-align: center;
+    margin: 0 8px;
+    color: white;
+    -moz-transition: color .4s ease-in;
+    -o-transition: color .4s ease-in;
+    -webkit-transition: color .4s ease-in;
+}
+
+.footer-basic .social>a:hover {
+    color: #e8c593;
+}
+
+.footer-basic .copyright {
+    margin-top: 1.5em;
+    text-align: center;
+    font-size: 13px;
+    color: #aaa;
+    margin-bottom: 0;
+}
+
+.about-section {
+    height: 91.5vh;
+    display: flex;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.about-section h1 {
+    margin-top: -1.5%;
+    font-size: 6.5em;
+    font-family: Playfair Display;
+    color: #e8c593;
+    margin-left: 15%;
+    margin-bottom: 2%;
+}
+
+.about-section p {
+    font-family: Montserrat;
+    width: 65%;
+    margin-left: 15%;
+    text-align: justify;
+    font-size: .9em;
+}
+
+.about-section img {
+    width: 20%;
+    margin-right: 10.5%;
+    display: inline-block;
+}
+
+.shop-now {
+    margin-left: 15%;
+    background-color: #0b0b0b;
+    color: white;
+    border: .5px solid white;
+    padding: 5px 20px 6px 20px;
+    font-family: Montserrat;
+    font-size: .8em;
+    margin-top: 1.5%;
+    -moz-transition: background-color .4s ease-in, color .4s ease-in;
+    -o-transition: background-color .4s ease-in, color .4s ease-in;
+    -webkit-transition: background-color .4s ease-in, color .4s ease-in;
+}
+
+.shop-now:hover {
+    color: #ebd2b0;
+    background-color: black;
+}
+
+.get-in-touch {
+    margin-left: 4%;
+    background-color: #0b0b0b;
+    color: white;
+    border: .5px solid white;
+    padding: 5px 20px 6px 20px;
+    font-family: Montserrat;
+    font-size: .8em;
+    margin-top: 1.5%;
+    -moz-transition: background-color .4s ease-in, color .4s ease-in;
+    -o-transition: background-color .4s ease-in, color .4s ease-in;
+    -webkit-transition: background-color .4s ease-in, color .4s ease-in;
+}
+
+.get-in-touch:hover {
+    color: #ebd2b0;
+    background-color: black;
+}
+
+.about {
+    margin-top: -1.5%;
+}
+
+.contact-section {
+    height: 91.5vh;
+    display: flex;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.contact-section h1 {
+    font-size: 4em;
+    font-family: Playfair Display;
+    color: #e8c593;
+    text-align: center;
+    margin-top: -1%;
+    margin-bottom: 6.8%;
+}
+
+.contact-section input {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid white !important;
+    color: white;
+    font-family: Montserrat;
+    line-height: 2em;
+    margin-bottom: 2em;
+    width: 50vw;
+}
+
+.contact-section input::placeholder {
+    color: #aaa;
+}
+
+.message {
+    padding-top: 3.5em;
+}
+
+.contact-form {
+    text-align: center;
+}
+
+.contact-section .send {
+    background-color: #0b0b0b;
+    color: white;
+    border: .5px solid white;
+    padding: 5px 20px 6px 20px;
+    font-family: Montserrat;
+    font-size: .9em;
+    margin-top: 1.2%;
+    -moz-transition: background-color .4s ease-in, color .4s ease-in;
+    -o-transition: background-color .4s ease-in, color .4s ease-in;
+    -webkit-transition: background-color .4s ease-in, color .4s ease-in;
+}
+
+.send:hover {
+    color: #ebd2b0;
+    background-color: black;
+}
+
+.login-section {
+    height: 91.5vh;
+    display: flex;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.login-section h1 {
+    font-size: 4em;
+    font-family: Playfair Display;
+    color: #e8c593;
+    text-align: center;
+    margin-top: -1%;
+    margin-bottom: 6.8%;
+}
+
+.login-section input {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid white !important;
+    color: white;
+    font-family: Montserrat;
+    line-height: 2em;
+    margin-bottom: 2.8em;
+    width: 40vw;
+}
+
+.login-section input::placeholder {
+    color: #aaa;
+}
+
+.login-form {
+    text-align: center;
+}
+
+.login-section .login-btn {
+    background-color: #0b0b0b;
+    color: white;
+    border: .5px solid white;
+    padding: 5px 20px 6px 20px;
+    font-family: Montserrat;
+    font-size: .9em;
+    margin-top: 4%;
+    -moz-transition: background-color .4s ease-in, color .4s ease-in;
+    -o-transition: background-color .4s ease-in, color .4s ease-in;
+    -webkit-transition: background-color .4s ease-in, color .4s ease-in;
+}
+
+.login-btn:hover {
+    color: #ebd2b0;
+    background-color: black;
+}
+
+.login-section .register-btn {
+    background-color: #0b0b0b;
+    color: white;
+    border: .5px solid white;
+    padding: 5px 20px 6px 20px;
+    font-family: Montserrat;
+    margin-left: 2.3em;
+    font-size: .9em;
+    margin-top: 2.3%;
+    -moz-transition: background-color .4s ease-in, color .4s ease-in;
+    -o-transition: background-color .4s ease-in, color .4s ease-in;
+    -webkit-transition: background-color .4s ease-in, color .4s ease-in;
+}
+
+.register-btn:hover {
+    color: #ebd2b0;
+    background-color: black;
+}
+
+.register-section {
+    height: 91.5vh;
+    display: flex;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.register-section h1 {
+    font-size: 4em;
+    font-family: Playfair Display;
+    color: #e8c593;
+    text-align: center;
+    margin-top: -1%;
+    margin-bottom: 5%;
+}
+
+.register-section input {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid white !important;
+    color: white;
+    font-family: Montserrat;
+    line-height: 2em;
+    margin-bottom: 2em;
+    width: 40vw;
+}
+
+.register-section input::placeholder {
+    color: #aaa;
+}
+
+.register-form {
+    text-align: center;
+}
+
+.register-section .register-btn {
+    background-color: #0b0b0b;
+    color: white;
+    border: .5px solid white;
+    padding: 5px 20px 6px 20px;
+    font-family: Montserrat;
+    font-size: .9em;
+    margin-top: 4%;
+    -moz-transition: background-color .4s ease-in, color .4s ease-in;
+    -o-transition: background-color .4s ease-in, color .4s ease-in;
+    -webkit-transition: background-color .4s ease-in, color .4s ease-in;
+}
+
+.register-btn:hover {
+    color: #ebd2b0;
+    background-color: black;
+}
+
+.register-section .create-btn {
+    background-color: #0b0b0b;
+    color: white;
+    border: .5px solid white;
+    padding: 5px 20px 6px 20px;
+    font-family: Montserrat;
+    font-size: .9em;
+    margin-top: 3%;
+    -moz-transition: background-color .4s ease-in, color .4s ease-in;
+    -o-transition: background-color .4s ease-in, color .4s ease-in;
+    -webkit-transition: background-color .4s ease-in, color .4s ease-in;
+}
+
+.create-btn:hover {
+    color: #ebd2b0;
+    background-color: black;
+}
+
+.product-section {
+    overflow: hidden;
+}
+
+.product-type {
+    text-align: center;
+    font-family: Playfair Display;
+    color: #e8c593;
+}
+
+.product-display {
+    text-align: center;
+    font-family: Montserrat;
+}
+
+.product-display h1 {
+    margin-top: .65em;
+    margin-bottom: .65em;
+    font-size: 2.9em;
+}
+
+.product-display h1:nth-of-type(2) {
+    margin-top: 1.35em;
+}
+
+.product-display h1:nth-of-type(3) {
+    margin-top: 1.35em;
+}
+
+.product-row img {
+    width: 70%;
+    filter: brightness(85%);
+}
+
+.product-row h4 {
+    text-align: center;
+    font-size: 1em;
+    margin-top: 1em;
+}
+
+.add-cart-btn {
+    background-color: black;
+    color: rgb(237, 237, 237);
+    padding: 5px 20px 6px 20px;
+    font-family: Montserrat;
+    margin-top: 0.4em;
+    font-size: .8em;
+    width: 71.5%;
+    -moz-transition: background-color .4s ease-in, color .4s ease-in;
+    -o-transition: background-color .4s ease-in, color .4s ease-in;
+    -webkit-transition: background-color .4s ease-in, color .4s ease-in;
+}
+
+.add-cart-btn:hover {
+    color: #ebd2b0;
+}
+
+.show-more {
+    background-color: #0b0b0b;
+    color: white;
+    border: .5px solid white;
+    padding: 5px 20px 6px 20px;
+    font-family: Montserrat;
+    font-size: .8em;
+    margin-top: 3%;
+    -moz-transition: background-color .4s ease-in, color .4s ease-in;
+    -o-transition: background-color .4s ease-in, color .4s ease-in;
+    -webkit-transition: background-color .4s ease-in, color .4s ease-in;
+}
+
+.show-more:hover {
+    color: #ebd2b0;
+    background-color: black;
+}
+
+.show-more:nth-of-type(3) {
+    margin-bottom: 7em;
+}
+
+.cart-section {
+    font-family: Montserrat;
+    background-color: #0b0b0b;
+    height: 91.5vh;
+}
+
+.card {
+    border: none !important;
+}
+
+div.card-body {
+    background-color: #0b0b0b !important;
+    padding: 0 !important;
+}
+
+div.col-lg-5 {
+    margin-top: 1.8% !important;
+    font-size: .9em !important;
+}
+
+.cart-section h5 {
+    color: white;
+}
+
+.cart-title {
+    font-size: 4em;
+    font-family: Playfair Display;
+    color: #e8c593 !important;
+    border-bottom: 1px solid white;
+    padding-bottom: 2.5%;
+    margin-bottom: 5% !important;
+}
+
+div.col-lg-7 {
+    padding-right: 5%;
+}
+
+.card-body input {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid white !important;
+    color: white;
+    font-family: Montserrat;
+    line-height: 2em;
+    margin-bottom: .6em;
+    padding-left: 1%;
+    width: 100%;
+}
+
+.item-name {
+    font-size: .95em !important;
+    margin-left: 10% !important;
+    width: 100% !important;
+}
+
+h5.mb-0 {
+    font-size: .9em !important;
+}
+
+.checkout {
+    background-color: #0b0b0b;
+    color: white;
+    margin-top: 1.5%;
+    border: .5px solid white;
+    padding: 5px 20px 6px 20px;
+    font-family: Montserrat;
+    font-size: 1em;
+    -moz-transition: background-color .4s ease-in, color .4s ease-in;
+    -o-transition: background-color .4s ease-in, color .4s ease-in;
+    -webkit-transition: background-color .4s ease-in, color .4s ease-in;
+}
+
+.checkout:hover {
+    color: #ebd2b0;
+    background-color: black;
+}
+
+.fab {
+    font-size: 1.8em !important;
+    -moz-transition: background-color .4s ease-in, color .4s ease-in;
+    -o-transition: background-color .4s ease-in, color .4s ease-in;
+    -webkit-transition: background-color .4s ease-in, color .4s ease-in;
+}
+
+.fab:hover {
+    color: #e8c593 !important;
+}
+
+.fa-trash {
+    color: rgb(203, 203, 203);
+    font-size: 1em;
+    -moz-transition: background-color .4s ease-in, color .4s ease-in;
+    -o-transition: background-color .4s ease-in, color .4s ease-in;
+    -webkit-transition: background-color .4s ease-in, color .4s ease-in;
+}
+
+.fa-trash:hover {
+    color: #e8c593 !important;
+}
